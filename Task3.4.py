@@ -30,7 +30,7 @@ for i in range(len(groups)):
             counts[index]+=1
         score=0
         for m in range(26):
-            actual_pct=(counts[m] / len(groups[i])) * 100
+            actual_pct=(counts[m] / len(groups[i])) * 10
             expected_pct = frequency[m]
             score+= abs(actual_pct - expected_pct)
         if(score<best_score or best_score==-1):
